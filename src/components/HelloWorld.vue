@@ -8,9 +8,9 @@ const numImages = 3
 const idx = ref(0)
 const show = ref(false)
 const images = ref([
-  'src/assets/img/img-01.png',
-  'src/assets/img/img-02.png',
-  'src/assets/img/img-03.png'
+  'src/assets/img/img-01.jpg',
+  'src/assets/img/img-02.jpg',
+  'src/assets/img/img-03.jpg'
 ])
 
 const generate = () => {
