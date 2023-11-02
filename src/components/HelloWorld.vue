@@ -8,9 +8,9 @@ const numImages = 3
 const idx = ref(0)
 const show = ref(false)
 const images = ref([
-  'src/assets/img/img-01.jpg',
-  'src/assets/img/img-02.jpg',
-  'src/assets/img/img-03.jpg'
+  'https://www.montessoricartagena.edu.co/apps/image-test/img-01.jpg',
+  'https://www.montessoricartagena.edu.co/apps/image-test/img-02.jpg',
+  'https://www.montessoricartagena.edu.co/apps/image-test/img-03.jpg'
 ])
 
 const generate = () => {
