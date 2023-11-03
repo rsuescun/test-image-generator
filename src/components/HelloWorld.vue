@@ -47,7 +47,11 @@ onMounted(() => {
 <template>
   <main class="container">
     <h1 class="">Artp-IAs</h1>
-    <button class="btn" @click="generate">Generar imágenes</button>
+    <button class="btn" @click="generate">
+      <span>En una mesa hay una piña,</span>
+      <span>dos cebollas.</span>
+      <span>Y se ven dos vasijas.</span>
+    </button>
     <div v-show="show" class="images-container" ref="imagesContainer">
       <img class="image" :src="images[idx]" alt="">
     </div>
@@ -71,14 +75,16 @@ onMounted(() => {
   color: #fff;
   cursor: pointer;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-family: Roboto, sans-serif;
   font-size: 40px;
   font-weight: 0;
   margin: 45px 0;
   padding: 30px 60px;
+  place-items: center;
   transform: translateY(0);
   transition : 1000ms;
+  width: 640px;
 }
 
 .btn:hover{
@@ -91,11 +97,10 @@ onMounted(() => {
 
 .images-container {
   background-color: #ffffff;
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
-  place-items: center;
   object-fit: fill;
+  place-items: center;
 }
 
 .image {
