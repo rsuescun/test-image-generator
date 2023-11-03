@@ -3,14 +3,19 @@ import { ref, onMounted } from 'vue'
 
 const imagesContainer = ref()
 const intervalId = ref(null)
-const delay = 5000
-const numImages = 3
+const delay = 8000
+const numImages = 8
 const idx = ref(0)
 const show = ref(false)
 const images = ref([
-  'https://www.montessoricartagena.edu.co/apps/image-test/img-01.jpg',
-  'https://www.montessoricartagena.edu.co/apps/image-test/img-02.jpg',
-  'https://www.montessoricartagena.edu.co/apps/image-test/img-03.jpg'
+  'https://www.montessoricartagena.edu.co/apps/image-test/imagen-ia-01.jpg',
+  'https://www.montessoricartagena.edu.co/apps/image-test/imagen-ia-02.jpg',
+  'https://www.montessoricartagena.edu.co/apps/image-test/imagen-ia-03.jpg',
+  'https://www.montessoricartagena.edu.co/apps/image-test/imagen-ia-04.jpg',
+  'https://www.montessoricartagena.edu.co/apps/image-test/imagen-ia-05.jpg',
+  'https://www.montessoricartagena.edu.co/apps/image-test/imagen-ia-06.jpg',
+  'https://www.montessoricartagena.edu.co/apps/image-test/imagen-ia-07.jpg',
+  'https://www.montessoricartagena.edu.co/apps/image-test/imagen-ia-08.jpg',
 ])
 
 const generate = () => {
@@ -41,7 +46,7 @@ onMounted(() => {
 
 <template>
   <main class="container">
-    <h1 class="">Imágenes generadas por IA</h1>
+    <h1 class="">Artp-IAs</h1>
     <button class="btn" @click="generate">Generar imágenes</button>
     <div v-show="show" class="images-container" ref="imagesContainer">
       <img class="image" :src="images[idx]" alt="">
