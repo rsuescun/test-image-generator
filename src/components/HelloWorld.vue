@@ -64,6 +64,7 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   place-items: center;
+  padding: 30px;
 }
 
 .btn{
@@ -80,11 +81,12 @@ onMounted(() => {
   font-size: 40px;
   font-weight: 0;
   margin: 45px 0;
+  max-width: 640px;
   padding: 30px 60px;
   place-items: center;
   transform: translateY(0);
   transition : 1000ms;
-  width: 640px;
+  width: 100%;
 }
 
 .btn:hover{
